@@ -5,7 +5,7 @@ for(i=0;i<temperatures.length;i++)
 {
   if(i==4) //change temperature for 4th day alone
   {
-    temperatures[i] = 29
+    temperatures[i] = temperatures[i] + 2
   }
 }
 
