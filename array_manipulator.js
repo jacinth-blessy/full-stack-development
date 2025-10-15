@@ -11,7 +11,7 @@ for(i=0;i<temperatures.length;i++)
 
 console.log(temperatures)
 
-//Assignment 2
+//Assignment 3
 function calculateEnergyBill(unitsConsumed)
 {
   let bill = 0
@@ -36,7 +36,7 @@ calculateEnergyBill(150);  // Should return 900
 calculateEnergyBill(250);  
 
 
-//Assignment 3
+//Assignment 4
 function calculateFinalPrice(orderAmount , discountCode )
 
 {
@@ -62,3 +62,25 @@ function calculateFinalPrice(orderAmount , discountCode )
 calculateFinalPrice(1000, "SAVE10"); // Should return 900
 calculateFinalPrice(2000, "SAVE20"); // Should return 1600
 calculateFinalPrice(150);
+
+
+//Assignment 5
+function checkPasswordStrength(password) {
+  if (password.length < 6) {
+    return "Weak";
+  }
+  const hasLetter = /[a-zA-Z]/.test(password);
+  const hasNumber = /[0-9]/.test(password);
+  const hasSpecial = /[^a-zA-Z0-9]/.test(password);
+
+  if ((hasLetter && !hasNumber && !hasSpecial) || 
+      (!hasLetter && hasNumber && !hasSpecial)) {
+    return "Moderate";
+  }
+
+  if (password.length >= 6 && ((hasLetter && hasNumber) || (hasSpecial))) {
+    return "Strong";
+  }
+
+  // return "Weak";
+}
