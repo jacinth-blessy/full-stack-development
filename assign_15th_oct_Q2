@@ -1,0 +1,47 @@
+//Question no: 1
+
+const car = { brand: 'Toyota', model: 'Corolla', year: 2020 };
+
+let carKeys = Object.keys(car)
+console.log(carKeys)
+let carValues = Object.values(car)
+console.log(carValues)
+
+
+//Question no: 2
+
+const employee = { name: 'Rahul', designation: 'Developer' };
+
+let sal = {salary : 50000 }
+let newEmployee = Object.assign({}, employee , sal)
+console.log(employee)
+console.log(newEmployee)
+
+
+//Question no : 3
+
+const objA = { x: 1, y: 2 };
+const objB = { y: 3, z: 4 };
+
+let newObj = Object.assign({}, objA, objB)
+console.log(newObj)
+
+
+//Question no : 4
+
+const settings = { theme: 'dark', notifications: true };
+Object.freeze(settings)
+settings.auto_display_off = '15 minustes'
+console.log(settings)
+
+
+//Question no : 5
+
+const book = {
+  title: 'Atomic Habits',
+  author: 'James Clear',
+  price: 499
+};
+
+console.log(`Does the object book has author as one of its properties? : ${book.hasOwnProperty('author')}`)
+console.log(`Does the object book has publisher as one of its properties? : ${book.hasOwnProperty('publisher')}`)
