@@ -1,0 +1,44 @@
+// Question no. : 01
+
+const fruits = ['apple', 'banana', 'orange'];
+// ad grape at end , remove apple from beginning
+fruits.push("grape")
+fruits.shift()
+console.log(fruits)
+
+
+//Question no. : 02
+
+const sentence = ' JavaScript is fun ';
+let senten = sentence.trim()
+let senUpper  = senten.toUpperCase()
+let splittedsen = senUpper.split(" ")
+console.log(splittedsen)
+
+
+//Question no : 03
+
+const numbers = [10, 20, 30, 40, 50];
+numbers.pop()
+numbers.shift()
+let joinednum = numbers.join().split(",")
+joinednum.reverse()
+joinednum.push("10")
+joinednum.unshift("50")
+console.log(joinednum)
+
+
+//Question no. : 04
+
+const emails = 'john@example.com, jane.doe@company.com, user123@gmail.com';
+
+let splitEmail = emails.split(",")
+let eachEmail = []
+for(i=0;i<splitEmail.length;i++)
+{
+  eachEmail.push(splitEmail[i].split('@')[0])
+}
+let allEmails = eachEmail.join(';')
+console.log(allEmails)
+
+
