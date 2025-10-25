@@ -87,6 +87,23 @@ function targetPairs(mainArray, tar)
 console.log(targetPairs([1,2,3,4,5], 6))
 
 
+//Assignment question no. : 07
+
+function fibonacci(n) {
+  if(n< 2)
+  {
+    return n
+  }
+  else
+  {
+    return fibonacci(n-1) + fibonacci(n-2)
+  }
+}
+
+console.log(fibonacci(5))
+console.log(fibonacci(6))
+
+
 //Assignment question no. : 08
 
 function newDupArray(originArray)
