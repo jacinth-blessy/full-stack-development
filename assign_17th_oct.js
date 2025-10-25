@@ -87,6 +87,21 @@ function targetPairs(mainArray, tar)
 console.log(targetPairs([1,2,3,4,5], 6))
 
 
+//Assignment question no. : 08
+
+function newDupArray(originArray)
+{
+  let dupArray = []
+  for(i=0;i<originArray.length;i++)
+  {
+   dupArray.push(originArray[i], originArray[i])
+  }
+  
+  return dupArray
+}
+
+console.log(newDupArray([1,2,3]))
+
 
 
 
