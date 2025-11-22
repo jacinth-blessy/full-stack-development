@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    color : white;
+    text-align : center
+}
+
+.grid-item2 {
+    background-color: orangered;
+}
+.grid-item3 {
+    background-color: blue
+}
+.grid-item4 {
+    background-color: yellow
+}
+.grid-item5 {
+    background-color: blueviolet
+}
+.grid-item6 {
+    background-color: green
+}
+.grid-item1 {
+    background-color: aqua
+}
+.grid-item7 {
+    background-color: rgb(240, 128, 24)
+}
+.grid-item8 {
+    background-color: aqua;
+}
+.grid-item9 {
+    background-color: brown
+}
